@@ -1,0 +1,8 @@
+[Unit]
+Description=node socket
+
+[Socket]
+ListenStream=/run/node_{{ project_name }}.sock
+
+[Install]
+WantedBy=sockets.target

@@ -1,0 +1,56 @@
+{
+  "extends": "@quasar/app/tsconfig-preset",
+  "compilerOptions": {
+    "allowJs": false,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6",
+    "baseUrl": ".",
+    "typeRoots": [
+      "node_modules/@types",
+      "./src/@types"
+    ],
+    "paths": {
+      "src/*": [
+        "src/*"
+      ],
+      "app/*": [
+        "*"
+      ],
+      "components/*": [
+        "src/components/*"
+      ],
+      "layouts/*": [
+        "src/layouts/*"
+      ],
+      "pages/*": [
+        "src/pages/*"
+      ],
+      "assets/*": [
+        "src/assets/*"
+      ],
+      "boot/*": [
+        "src/boot/*"
+      ],
+      "hooks/*": [
+        "./src/hooks/*"
+      ],
+      "images/*": [
+        "./src/assets/images/"
+      ],
+      "@types": [
+        "./src/@types/index"
+      ],
+    },
+  },
+  "exclude": [
+    "/dist",
+    ".quasar",
+    "node_modules"
+  ]
+}

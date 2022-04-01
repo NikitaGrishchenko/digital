@@ -1,0 +1,81 @@
+.article
+  &-container
+    margin-top: -150px
+    margin-bottom: 20px
+  &-details
+    &__footer
+      margin-top: 20px
+    &__authors
+      margin-bottom: 10px
+      &-name
+        font-size: 1.2rem
+      &-position
+        font-size: .9rem
+      &-img
+        border-radius: 50%
+        object-fit: cover
+        &__none
+          border-radius: 50%
+          background: #738a94
+    &__numberOfViews
+      font-size: 1.1rem
+    &__header
+      margin-bottom: 40px
+      text-align: center
+    &__time-tag
+      color: #3eb0ef
+      font-size: 1.1rem
+      font-weight: 600
+      text-transform: uppercase
+    &__title
+      color: #090a0b
+      font-size: 1.7rem
+      font-weight: 700
+    &__img
+      border-radius: 8px
+      height: 800px
+      width: 90vw
+      object-fit: cover
+  &-cards
+    margin-top: -80px
+  &-tag
+    font-size: 3rem
+    font-weight: 700
+    &__count
+      font-size: 1.3rem
+      font-weight: 300
+      letter-spacing: .5px
+      opacity: .8
+  &-header
+    height: 350px !important
+  &-item
+    &__wrapper
+      cursor: pointer
+    &__title
+      font-size: 1.2rem
+      font-weight: 700
+      margin: 5px 0
+    &__preview
+      font-size: .9rem
+    &__tag
+      color: #738a94
+      font-size: .8rem
+      line-height: 1.15em
+      font-weight: 500
+    &__img
+      width: 295px
+      height: 200px
+      object-fit: cover
+
+@media (max-width: 992px)
+  .article
+    &-cards
+      margin-top: 0
+
+@media (max-width: 1024px)
+  .article
+    &-container
+      margin-top: 10px
+    &-details
+      &__img
+        height: 300px

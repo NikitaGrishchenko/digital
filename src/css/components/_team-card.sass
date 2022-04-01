@@ -1,0 +1,29 @@
+.team
+  &-card
+    overflow: hidden
+    min-height: 380px
+    &__img
+      animation: opacityImg 1s 1
+      border-radius: 50%
+      object-fit: cover
+    &__fullname
+      font-size: 1.3rem
+      font-weight: 600
+    &__position
+      font-size: .9rem
+      color: #738a94
+    &__content
+      transform: translateY(0px)
+      animation: contentAnimate 1s 1
+
+@keyframes opacityImg
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@keyframes contentAnimate
+  0%
+    transform: translateY(300px)
+  100%
+    transform: translateY(0px)
