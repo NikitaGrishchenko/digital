@@ -4,11 +4,13 @@
         transition-show="slide-down"
         transition-hide="slide-up"
         position="top"
-        full-width
         ref="dialogRef"
         @hide="onDialogHide"
     >
-        <q-card class="hide-scroll">
+        <q-card
+            class="hide-scroll"
+            style="min-width: 70%"
+        >
             <q-form
                 @submit.prevent="onSubmit"
                 ref="feedbackForm"
@@ -16,7 +18,7 @@
                 class="q-gutter-md"
             >
                 <q-card-section class="bg-black text-white flex justify-between">
-                    <div class="text-h6">Обратная связь</div>
+                    <div class="text-h6">Написать нам</div>
                     <q-btn
                         class=""
                         size="sm"

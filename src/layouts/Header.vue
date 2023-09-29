@@ -21,25 +21,13 @@
                     stretch
                     flat
                 >{{ link.title }}</router-link>
-                <q-btn
-                    outline
-                    v-for="action in actionsList"
-                    :key="action.id"
-                    @click="action.func"
-                    :label="action.title"
-                />
             </template>
-            <!-- <SocialLinks
-                v-for="social in socialsList"
-                :key="social.id"
-                customClass="text-white link__text-decoration q-ml-sm"
-                :link="social.link"
-                :icon="social.icon"
-            /> -->
-            <Menu
-                v-if="$q.screen.lt.sm"
-                :links="linksList"
-                :actions="actionsList"
+            <q-btn
+                unelevated
+                color="primary"
+                label="Написать нам"
+                @click="showFeddbackForm"
+                class="second-layout__menu"
             />
         </q-toolbar>
     </q-header>
@@ -49,13 +37,11 @@
 import { defineComponent } from 'vue';
 import { useQuasar } from 'quasar';
 import FeedbackForm from 'components/FeedbackForm.vue';
-import SocialLinks from 'components/SocialLinks.vue';
-import Menu from 'layouts/Menu.vue';
 
 export default defineComponent({
     components: {
         // SocialLinks,
-        Menu
+        // Menu
     },
     props: {
         shadow: {
@@ -97,19 +83,12 @@ export default defineComponent({
             //   link: { name: 'loginPage' }
             // }
         ];
-        const socialsList = [
-            {
-                id: 0,
-                title: 'Телеграм',
-                icon: 'mdi-telegram',
-                link: 'https://t.me/+3YBvIPOb2agwODIy'
-            }
-        ];
         const actionsList = [
             {
                 id: 0,
                 title: 'Связаться',
-                func: showFeddbackForm
+                func: showFeddbackForm,
+                class: 'second-layout__menu'
             }
         ];
         return {
