@@ -4,14 +4,16 @@ from datetime import timedelta
 from config.settings.base import env
 
 REST_FRAMEWORK = {
-    "DATETIME_INPUT_FORMATS": ["%d.%m.%Y, %H:%M",],
+    "DATETIME_INPUT_FORMATS": [
+        "%d.%m.%Y, %H:%M",
+    ],
     "DATETIME_FORMAT": "%d.%m.%Y %H:%M",
-    "DEFAULT_PERMISSION_CLASSES": (
-        "rest_framework.permissions.IsAuthenticated",
-    ),
-    "DEFAULT_AUTHENTICATION_CLASSES": (
-        "dj_rest_auth.jwt_auth.JWTCookieAuthentication",
-    ),
+    # "DEFAULT_PERMISSION_CLASSES": (
+    #     "rest_framework.permissions.IsAuthenticated",
+    # ),
+    # "DEFAULT_AUTHENTICATION_CLASSES": (
+    #     "dj_rest_auth.jwt_auth.JWTCookieAuthentication",
+    # ),
     "DEFAULT_RENDERER_CLASSES": (
         "djangorestframework_camel_case.render.CamelCaseJSONRenderer",
         "djangorestframework_camel_case.render.CamelCaseBrowsableAPIRenderer",

@@ -3,7 +3,7 @@ run-django-server:
 	poetry run task server localhost:8000
 
 run-quasar:
-	quasar dev -m ssr
+	yarn quasar dev
 
 install-frontend:
 	yarn

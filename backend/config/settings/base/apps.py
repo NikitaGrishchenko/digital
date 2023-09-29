@@ -14,7 +14,7 @@ DEFAULT_APPS = [
     "modeltranslation",
     "widget_tweaks",
     "rest_framework",
-    "rest_framework.authtoken",
+    # "rest_framework.authtoken",
     "drf_yasg",
     "django_cleanup.apps.CleanupConfig",
     "etc",
@@ -22,7 +22,7 @@ DEFAULT_APPS = [
     "ckeditor",
     "ckeditor_uploader",
     "django_filters",
-    "dj_rest_auth",
+    # "dj_rest_auth",
 ]
 
 PROJECT_APPS = [

@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /dj-admin/
-Disallow: /sql/
-Disallow: /api/
-Disallow: /media/
